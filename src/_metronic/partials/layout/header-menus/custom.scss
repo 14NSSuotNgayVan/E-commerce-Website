@@ -1,0 +1,21 @@
+.toggle-language {
+    margin-right: 20px;
+    position: relative;
+};
+
+.current-language:hover~.menu-sub {
+    display: block;
+};
+
+.menu-sub {
+    position: absolute;
+    display: none;
+    background-color: white;
+    top: 30px;
+    left: 16.5px;
+    border-radius: 8px;
+};
+
+.menu-sub:hover {
+    display: block;
+};

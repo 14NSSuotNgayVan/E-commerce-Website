@@ -1,0 +1,106 @@
+@import "../../modules/styles/variable";
+
+:root {
+    font-size: 16px;
+
+}
+
+body {
+    user-select: none;
+}
+
+.home-page {
+    font-size: 16px;
+    width: 100%;
+    padding: 10px;
+
+    .banner {
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 60vh;
+        display: flex;
+        align-items: center;
+
+        h1 {
+            font-family: $font-poppins;
+            font-size: 3.5rem;
+            letter-spacing: -1px;
+            font-weight: 500;
+        }
+
+        .banner-content {
+            padding: 40px;
+
+            .button-secondary {
+                color: $color-dark;
+                text-transform: uppercase;
+                font-weight: 600;
+                font-size: 0.875rem;
+                letter-spacing: 2px;
+
+                &:hover {
+                    color: #fff !important;
+                    background-color: $color-dark;
+                    border: 1px solid $color-dark !important;
+                }
+            }
+        }
+    }
+
+    .suppliers {
+        margin-bottom: 40px;
+        border-bottom: 1px solid $color-light-gray;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        max-width: 1200px;
+        margin-right: auto;
+        margin-left: auto;
+
+        .suppliers-content {
+            // width: 120px;
+        }
+    }
+
+    .about {
+        padding: 36px 0px;
+        max-width: 1200px;
+        margin-right: auto;
+        margin-left: auto;
+
+        .tittle {
+            text-transform: uppercase;
+        }
+
+        .heading {
+            font-family: $font-poppins;
+            line-height: 1.3em;
+            font-weight: 500;
+            font-size: 3rem;
+            margin-bottom: 1.65rem;
+        }
+
+        .content {
+            color: $color-light-gray-1;
+            font-size: 1.5rem;
+            line-height: 2.5rem;
+            font-weight: 400;
+            margin-bottom: 3rem;
+        }
+    }
+
+    .category-display {
+        .btn-outline {
+            width: unset !important;
+            border-radius: 0;
+            border: 2px solid #fff;
+            color: #fff;
+            &:hover {
+                background-color: #fff;
+                color: black;
+            }
+        }
+    }
+}

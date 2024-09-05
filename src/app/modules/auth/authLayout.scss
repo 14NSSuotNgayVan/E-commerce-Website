@@ -1,0 +1,183 @@
+@import "../styles/_variable.scss";
+
+.authLayout {
+  display: flex;
+  align-items: center;
+  background: linear-gradient(0deg, rgba(26, 94, 131, 0.41) 0%, rgba(26, 94, 131, 0.41) 100%), url(/media/backgrounds/Network-Engineering-Services.jpg), lightgray 50% / cover no-repeat;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+
+  .wellcome-site {
+    .logo {
+      margin-bottom: 1.6rem;
+
+      img {
+        width: 12rem;
+        height: 5rem;
+      }
+    }
+  }
+
+  .wellcome-header {
+    margin-bottom: 1.5rem;
+
+    h4 {
+      margin: 0;
+      padding: 0 2rem;
+      text-align: center;
+      color: #F5F8FA;
+      font-size: 1.6rem;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 1.4rem;
+    }
+  }
+
+  .form-width {
+    width: 35rem;
+    padding: 3rem;
+    background-color: #ffffff;
+    padding: 2rem 2.6rem;
+    border-radius: 0.56rem;
+    background-color: rgba(255, 255, 255);
+    box-shadow: 0px 0px 40px 0px rgba(198, 217, 236, 0.7);
+    border: 1px solid #ffffff3d;
+  }
+}
+
+.login-form {
+
+  .login-header {
+    text-align: center;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 2.66667rem;
+    margin-bottom: 20px;
+  }
+
+  .forgot-password {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    padding-right: 8px;
+  }
+
+  .login-submit {
+    .indicator-label {
+      padding: 0px 30px;
+      font-size: 16px;
+    }
+  }
+
+  .input-wrapper {
+    position: relative;
+    margin-bottom: 24px;
+
+    .input-field {
+      padding-left: 53px;
+      border-radius: 0.56rem;
+      border: 1px solid #EBECF5;
+      background: #FFF !important;
+      padding-top: 12px;
+      padding-bottom: 8px;
+      font-size: 16px;
+      margin-bottom: 4px;
+
+      &[name="password"] {
+        padding-right: 50px;
+      }
+
+      &::placeholder {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        margin: 0;
+      }
+    }
+
+    .icon-username {
+      background-image: url('../../../../public/media/svg/login/Profile.svg') !important;
+      background-position: 19px 12px !important;
+      background-repeat: no-repeat !important;
+    }
+
+    .icon-password {
+      background-image: url('../../../../public/media/svg/login/Lock.svg') !important;
+      background-position: 19px 12px !important;
+      background-repeat: no-repeat !important;
+    }
+  }
+
+  .switch-wrapper {
+    margin-bottom: 28px;
+
+    .form-check-label {
+      color: #FFF;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      padding-left: 8px;
+    }
+
+    .form-switch {
+      .form-check-input {
+        background-color: #CCDFEE !important;
+        border-color: #1A5E83;
+
+        &:checked {
+          background-color: #1A5E83 !important;
+        }
+      }
+    }
+  }
+
+  .bg-input-login {
+    background: #F5F8FA;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .authLayout {
+    .wellcome-site {
+      .logo {
+        margin-bottom: 1.8rem;
+
+        img {
+          width: 16rem;
+          height: 6rem;
+        }
+      }
+    }
+
+    .wellcome-header {
+      margin-bottom: 2.4rem;
+
+      h4 {
+        margin: 0;
+        padding: 0 2rem;
+        font-size: 1.6rem;
+      }
+    }
+
+    .form-width {
+      width: 38rem;
+    }
+  }
+
+  .login-form {
+    padding: 2rem 2.6rem;
+
+    .login-header {
+      font-size: 2rem;
+      margin-bottom: 26px;
+    }
+
+    .switch-wrapper {
+      .form-check-label {
+        font-size: 16px;
+      }
+    }
+  }
+}

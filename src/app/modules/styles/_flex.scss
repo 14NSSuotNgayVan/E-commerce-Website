@@ -1,0 +1,68 @@
+.grid-two {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.flex-near {
+  display: flex;
+  gap: 1px;
+  align-items: center;
+  justify-content: start;
+}
+
+.flex-wrap-none {
+  flex-wrap: nowrap !important;
+}
+@media (max-width: 992px) {
+  .flex-column-reverse-md {
+    flex-direction: column-reverse;
+  }
+
+  .flex-row-reverse-md {
+    flex-direction: row-reverse;
+  }
+
+}
+
+@media (max-width: 768px) {
+  .flex-column-reverse-sm {
+    flex-direction: column-reverse;
+  }
+
+  .flex-row-reverse-sm {
+    flex-direction: row-reverse;
+  }
+
+}
+
+@media (max-width: 576px) {
+  .flex-column-reverse-xs {
+    flex-direction: column-reverse;
+  }
+
+  .flex-row-reverse-xs {
+    flex-direction: row-reverse;
+  }
+
+}
+
+// $window-size: (
+//   xs : 576px,
+//   sm :768px,
+//   md :992px,
+//   lg : 1200px
+// );
+
+// @each $name, $value in $window-size {
+//   @media (max-width: $value) {
+//     .flex-column-reverse-#{$name} {
+//       flex-direction: column-reverse;
+//     }
+
+//     .flex-row-reverse-#{$name} {
+//       flex-direction: row-reverse;
+//     }
+
+//   }
+// }

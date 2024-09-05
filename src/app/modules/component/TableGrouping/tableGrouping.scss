@@ -1,0 +1,13 @@
+@import '../../../modules/styles/variable';
+
+.table-group {
+  overflow: auto;
+  .chervon-rotate-down {
+    transform: rotate(90deg);
+  }
+
+  .transition-linear {
+    transition: all 0.25s linear;
+  }
+  
+}
