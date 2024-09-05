@@ -1,0 +1,213 @@
+// display
+.display-none {
+  display: none;
+}
+
+.display-block {
+  display: block;
+}
+
+.flex {
+  display: flex;
+}
+
+.inline-flex {
+  display: inline-flex;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.flex-2 {
+  flex: 2;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-start {
+  justify-content: flex-start !important;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+}
+
+.flex-end {
+  justify-content: flex-end;
+}
+
+.flex-space-between {
+  justify-content: space-between !important;
+}
+
+.flex-space-around {
+  justify-content: space-around;
+}
+
+.flex-middle {
+  display: flex;
+  align-items: center;
+}
+
+.flex-align-items-end {
+  align-items: end;
+}
+
+.flex-top {
+  align-items: flex-start !important;
+}
+
+.flex-stretch {
+  align-items: stretch;
+}
+
+.flex-grow-0 {
+  flex-grow: 0;
+}
+
+.flex-grow-1 {
+  flex-grow: 1;
+}
+
+.flex-grow-2 {
+  flex-grow: 2;
+}
+
+.flex-grow-3 {
+  flex-grow: 3;
+}
+
+.flex-shrink-0 {
+  flex-shrink: 0;
+}
+
+.flex-shrink-1 {
+  flex-shrink: 1;
+}
+
+.flex-shrink-2 {
+  flex-shrink: 2;
+}
+
+.flex-shrink-3 {
+  flex-shrink: 3;
+}
+
+.overflow-auto {
+  overflow: auto !important;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.scroll-y {
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.scroll-x {
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+// postions
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.absolute-top-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.position-bottom {
+  position: absolute;
+  bottom: 0;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.text-middle {
+  vertical-align: middle;
+}
+
+.text-align-right {
+  text-align: right;
+}
+
+.text-align-left {
+  text-align: left !important;
+}
+
+.text-uppercase {
+  text-transform: uppercase !important;
+}
+
+.text-capitalize {
+  text-transform: capitalize !important;
+}
+
+.text-capitalize-first {
+  text-transform: capitalize;
+}
+
+.text-capitalize-first::first-letter {
+  text-transform: uppercase;
+}
+
+.x-center {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.y-center {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+// misc
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.cursor-move {
+  cursor: move;
+}
+
+.grid-column-2 {
+  grid-column: span 2;
+}
+
+.grid-column-3 {
+  grid-column: span 3;
+}
+
+.grid-column-4 {
+  grid-column: span 4;
+}
+
+.z-index-under {
+  z-index: -1;
+}

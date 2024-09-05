@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/media/logos/logo.png" />
+    <link rel="stylesheet" id="layout-styles-anchor" href="/splash-screen.css" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Angel shoes</title>
+    <meta name="description" content="Giải pháp kinh doanh hiệu quả, hiện đại và dễ sử dụng" />
+  </head>
+  <body id="kt_body" class="page-loading splash-screen mat-typography">
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <!--begin::Theme mode setup on page load-->
+    <script>
+      if (document.documentElement) {
+        var defaultThemeMode = "system";
+
+        var themeMode = localStorage.getItem("kt_theme_mode_value");
+        if (!themeMode) {
+          if (defaultThemeMode === "system") {
+            themeMode =
+              window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+          } else {
+            themeMode = defaultThemeMode;
+          }
+        }
+
+        document.documentElement.setAttribute("data-theme", themeMode);
+      }
+    </script>
+    <!--end::Theme mode setup on page load-->
+
+    <div id="root" class=""></div>
+
+    <div id="root-modals"></div>
+
+    <script type="module" src="./src/main.tsx"></script>
+  </body>
+</html>

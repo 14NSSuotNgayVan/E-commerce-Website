@@ -1,0 +1,24 @@
+.icon-hover:hover {
+    border-color: #3b71ca !important;
+    background-color: white !important;
+    color: #3b71ca !important;
+}
+
+.icon-hover:hover i {
+    color: #3b71ca !important;
+}
+
+.item-similar:hover {
+    background-color: var(--kt-primary) !important;
+    color: #ffffff !important;
+    border-radius: 6px;
+    transition: all 0.2s linear;
+}
+
+.product-detail-nav:hover:not(.active) {
+    cursor: pointer;
+    background-color: var(--kt-primary) !important;
+    opacity: 0.7;
+    color: #fff;
+    transition: all 0.2s linear;
+}

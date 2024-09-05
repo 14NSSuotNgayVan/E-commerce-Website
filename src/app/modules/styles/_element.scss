@@ -1,0 +1,101 @@
+@import "./variable";
+
+.button {
+  width: 110px;
+  height: 40px;
+  text-align: center;
+  border-radius: 8px;
+  border: none;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 127%;
+  cursor: pointer;
+}
+
+.btn-blue {
+  background-color: $color-blue;
+  color: $color-white;
+}
+
+;
+
+.btn-white {
+  background-color: $color-white;
+  color: $color-dark-blur-1;
+  border: 1px solid $color-dark-blur-2;
+}
+
+;
+
+.text-title {
+  color: #0D47A1;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 34px;
+
+  &-icon {
+    font-weight: bold;
+    font-size: 20px;
+  }
+}
+
+.text-header {
+  color: #111111;
+  font-size: 23px;
+  font-weight: 700;
+  line-height: 32px;
+}
+
+.text-label {
+  align-self: center;
+  color: #707070;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
+}
+
+.frame {
+  border-radius: 10px;
+  background-color: white;
+}
+
+.website-logo {
+  width: 35px;
+  height: 35px;
+  object-fit: cover;
+  overflow: hidden;
+  display: inline-block;
+  padding: 0 !important;
+  cursor: pointer;
+}
+
+.center {
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-center {
+  gap: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.select__option {
+  width: 100%;
+  padding: 100px;
+}
+
+.fit-content {
+  width: fit-content !important;
+}
+
+.bg-pri {
+  background-color: $color-bright-cyan !important;
+  color: white;
+
+  &:hover {
+    background-color: $color-light-cyan-active !important;
+  }
+}

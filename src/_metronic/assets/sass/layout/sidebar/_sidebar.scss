@@ -1,0 +1,92 @@
+//
+// Sidebar
+//
+
+// Desktop mode
+@include media-breakpoint-up(lg) {
+    .app-sidebar-toggle {
+        $sidebar-toggle-width: 16px;
+        $sidebar-toggle-height: 66px;
+        position: relative;
+        z-index: 1;
+        width: $sidebar-toggle-width;
+        height: $sidebar-toggle-height;
+        background-color: $app-sidebar-light-bg-color;
+        cursor: pointer;
+
+        &::before,
+        &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            width: 0;
+            height: 0;
+            border-style: solid;
+        }
+
+        &::before {
+            border-width: calc($sidebar-toggle-height * 0.2) 0 0 $sidebar-toggle-width;
+            border-color: transparent transparent transparent $app-sidebar-light-bg-color;
+            top: 0;
+            transform: translateY(-100%);
+        }
+
+        &::after {
+            border-width: calc($sidebar-toggle-height * 0.2) $sidebar-toggle-width 0 0;
+            border-color: $app-sidebar-light-bg-color transparent transparent transparent;
+            bottom: 0;
+            transform: translateY(100%);
+        }
+
+        .svg-icon {
+            position: relative;
+            left: 7px;
+        }
+
+        .active .svg-icon {
+            transform: rotateZ(0deg) !important;
+        }        
+    }
+
+    [dir="rtl"] {
+        .app-sidebar-toggle {
+            .svg-icon {
+                transform: rotateZ(180deg);
+            }
+
+            &.active .svg-icon {
+                transform: rotateZ(0deg) !important;
+            }
+        }
+    }
+        
+    .app-sidebar-logo {
+        height: var(--kt-app-header-height); 
+        display: flex;
+        align-items: center;
+        justify-content: space-between;        
+        position: relative;
+        flex-shrink: 0;
+    }
+        
+    .app-sidebar-menu {
+        .menu  {
+            & > .menu-item:first-child{
+                margin-top: 16px;
+            }
+            & > .menu-item {
+                margin-top: 8px;  
+            }    
+        }    
+        .menu-title {
+            @include app-layout-transition(opacity);
+        }
+    }
+}
+
+// Tablet & mobile modes
+@include media-breakpoint-down(lg) {
+    .app-sidebar-logo {
+        display: none;
+    }
+}

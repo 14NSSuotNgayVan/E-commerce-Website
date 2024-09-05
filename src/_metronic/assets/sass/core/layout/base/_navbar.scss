@@ -1,0 +1,21 @@
+//
+// App Navbar
+//
+
+.app-navbar {
+    display: flex;
+    align-items: stretch;
+
+    .app-navbar-item {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        padding: 0 12px;
+    }
+
+    &.app-navbar-stretch {
+        .app-navbar-item {
+            align-items: stretch;
+        }
+    }
+}

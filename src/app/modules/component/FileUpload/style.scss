@@ -1,0 +1,34 @@
+@import "../../styles/variable";
+
+input[type="file"] {
+    display: none;
+}
+
+.custom-file-upload {
+    height: 38px;
+    display: flex !important;
+    justify-content: space-between;
+    border: 1px solid $color-silver;
+    display: inline-block;
+    border-radius: 0.475rem;
+    padding: 0.5rem 0.75rem;
+    width: 100%;
+
+    &.disabled {
+        background-color: $color-disabled;
+    }
+}
+
+.icon-upload-file {
+    border-right: #ddd 1px solid;
+    margin-right: 4px;
+    padding-right: 4px;
+}
+
+.file-preview {
+    flex: 1;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 100%;
+}

@@ -1,0 +1,117 @@
+.bg-table-active td,
+.bg-table-active {
+    background-color: $color-active-table !important;
+}
+
+.color-red {
+    color: red !important;
+}
+
+.color-white {
+    color: var(--kt-white) !important;
+}
+
+.bg-white {
+    background-color: var(--kt-white) !important;
+}
+
+.bg-gray {
+    background-color: $color-bg-gray !important;
+}
+
+.bg-nav-gray:not(.active) {
+    background-color: $color-bg-gray !important;
+}
+
+.bg-coral {
+    background-color: #FF4D4F;
+}
+
+.bg-green {
+    background-color: #28A745;
+}
+
+.bg-slate-gray {
+    background-color: #6C757D;
+}
+
+.bg-purple {
+    background-color: #722ED1;
+}
+
+.bg-amber {
+    background-color: #FFC107;
+}
+
+.bg-green {
+    background-color: $color-green !important;
+}
+
+.bg-dark-red {
+    background-color: $color-dark-red !important;
+}
+
+.bg-dark-orange {
+    background-color: $color-dark-orange !important;
+}
+
+
+.color-primary {
+    color: var(--kt-primary) !important;
+}
+
+.color-steel-blue {
+    color: $color-steel-blue !important;
+}
+
+.color-green {
+    color: $color-green !important;
+}
+
+.color-black-warm {
+    color: $color-black-warm !important;
+}
+
+.color-gray {
+    color: $color-gray !important;
+}
+
+.color-dark-orange {
+    color: $color-dark-orange !important;
+}
+
+.color-dark-red {
+    color: $color-dark-red !important;
+}
+
+.color-placeholder {
+    color: $color-placeholder !important;
+}
+
+.color-gunmetal {
+    color: $color-gunmetal !important;
+}
+
+.bg-header-table {
+    background-color: $color-silver !important;
+}
+
+.text-header-table {
+    color: #212529 !important
+}
+
+.text-black {
+    color: var(--kt-black) !important;
+}
+
+.color-border-tabel {
+    color: $color-border-table !important;
+}
+
+.table-collapse-border-bottom {
+    border-bottom: 1px solid $color-silver !important;
+}
+
+.bg-table {
+    background-color: var(--kt-table-active-bg) !important;
+}
